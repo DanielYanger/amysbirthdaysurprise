@@ -280,5 +280,5 @@ function drawLineBetweenEntries(entry1Id, entry2Id, canvasId, color, opacity) {
 
 function sprayConfetti() {
     alert("Congrats! You've won a My Melody Woobles Kit!");
-    window.location.href = "./index.html"
+    window.location.href = "../index.html"
 }

@@ -7,6 +7,7 @@
             console.log("Local storage cleared!");
         };
     </script>
+    <link rel="icon" type="image/x-icon" href="../img/icon.png">
 </head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -4662,7 +4663,7 @@ Exolve.prototype.getGridStateAndNumFilled = function(notifyIfComplete=true) {
     // Dispatch the event asynchronously, after the display has been updated.
     setTimeout(this.fireCompletionEvent.bind(this), 0);
     alert("Congrats! You've won a Planner!");
-    window.location.href = "./index.html";
+    window.location.href = "../index.html";
   }
   return state;
 }

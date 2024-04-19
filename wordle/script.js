@@ -111,7 +111,7 @@ function checkGuess() {
     toastr.success("You guessed right! Game over!");
     guessesRemaining = 0;
         alert("Congrats! You've won a $100 Pottery Gift Card!");
-        window.location.href = "./index.html"; 
+        window.location.href = "../index.html"; 
     return;
   } else {
     guessesRemaining -= 1;
