@@ -1,0 +1,128 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amy's Birthday Surprise</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Center elements vertically */
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 36px;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        .boxes-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .box {
+            width: 200px;
+            height: 300px;
+            background-color: rgb(218, 218, 218);
+            border-radius: 15px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            overflow: hidden; /* Ensures the image does not overflow */
+            position: relative; /* Allows absolute positioning within the box */
+        }
+        .box .image {
+            width: 100%;
+            height: 175px; /* Adjust the height as needed */
+            background-size: cover; /* Cover the entire area of the box */
+            background-position: center; /* Center the background image */
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .box .content {
+            margin-top: 10px;
+        }
+        .box .content p {
+            font-size: 18px; /* Adjust the font size as needed */
+            font-family: Georgia, sans-serif;
+        }
+        .box button {
+            margin-top: auto; /* Pushes the button to the bottom */
+            padding: 10px 50px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Amy's Birthday NYT Games</h1>
+
+<div class="boxes-container">
+    <div class="box">
+        <div class="image" style="background-image: url(/img/wordle.png);"></div>
+        <div class="content">
+            <p>Wordle</p>
+            <button onclick="redirect_wordle()">Play</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image" style="background-image: url(/img/strands.png);"></div>
+        <div class="content">
+            <p>Strands</p>
+            <button onclick="redirect_strands()">Play</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image" style="background-image: url('/img/connections.png');"></div>
+        <div class="content">
+            <p>Connections</p>
+            <button onclick="redirect_connections()">Play</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="image" style="background-image: url('/img/mini.png');"></div>
+        <div class="content">
+            <p>Crossword</p>
+            <button onclick="redirect_crossword()">Play</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function redirect_wordle() {
+        window.location.href = "/wordle/wordle.html";
+    }
+
+    function redirect_strands() {
+        window.location.href = "/strands/strands.html";
+    }
+
+    function redirect_connections() {
+        window.location.href = "/connections/connections.html";
+    }
+
+    function redirect_crossword() {
+        window.location.href = "/crossword/crossword.html";
+    }
+</script>
+
+</body>
+</html>

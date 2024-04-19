@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Codections">
+<meta property="og:type" content="website">
+<title>Amy's Birthday Connections</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/connections/styles/micromodal.css">
+<link rel="stylesheet" href="/connections/styles/style.css">
+<script defer src="/connections/styles/Sortable.min.js"></script>
+<script defer src="/connections/styles/micromodal.min.js"></script>
+<script defer src="/connections/styles/clipboard.min.js"></script>
+<script defer src="/connections/script.js"></script>
+</head>
+<body>
+<div class="container">
+<h1 id="title">Amy's Birthday Connections</h1>
+<h2>Find 4 words that share a topic.</h2>
+<div id="grids">
+<div id="puzzle" class="grid">
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+</div>
+<div id="solved" class="grid"></div>
+</div>
+<div id="hud">
+<div class="tries">
+Tries remaining:
+<span id="tries">
+<span class="try"></span>
+<span class="try"></span>
+<span class="try"></span>
+<span class="try"></span>
+</span>
+</div>
+<div class="btns">
+<a class="btn" id="shuffle">Shuffle</a>
+<a class="btn" id="deselect">Deselect All</a>
+<a class="btn btn-primary disabled" id="submit">Submit</a>
+</div>
+</div>
+<div id="share" class="btn hide" data-micromodal-trigger="modal-share">
+View Results
+</div>
+<div class="credit">
+</div>
+<div class="modal micromodal-slide" id="modal-share" aria-hidden="true">
+<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-share-title">
+<header class="modal__header">
+<h2 class="modal__title" id="modal-share-title">
+Codections #1
+</h2>
+<button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+</header>
+<main class="modal__content" id="summary">
+</main>
+<footer class="modal__footer">
+<div id="clipboard" class="btn btn-primary" data-clipboard-target="#summary">Copy Results to Clipboard</div>
+</footer>
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
